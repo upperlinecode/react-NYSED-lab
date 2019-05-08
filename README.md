@@ -12,7 +12,7 @@ Take a look at the page you'll be designing:
 The full NYSED data site can be found below:
 [NYSED Data Site](https://data.nysed.gov/)
 
-## The Lab
+## The Context
 New York collects vast amounts of data about every school in the state. They collect enrollment data about student demographics, graduation rates, state test results, and school survey data. All of this data is aggregated and presented in a user friendly way at the NYSED website.
 
 For this lab, we are going to replicate a page of the NYSED website. Users are able to look up school by letter. We are going to try and reproduce the webpage for all the schools in New York State that start with the letter "C."
@@ -20,16 +20,30 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 ### Getting Started
 Open the file "nycSchoolEnrollmentData.js" in the "src" directory. This contains demographic data for every school in New York state that begins with the letter "C." Take a look a see how this data is structured.
 
-Now, open "App.js" and notice how the school data has been imported as "data" already. Using this data, pass the name of the first school as props into a SchoolCard component.
+Now, open "App.js" and notice how the school data has been imported as "data" already. You're ready to get started.
 
-Then, update the school card so that the name of the school is displayed in the card header.
-Once you've got the first school completed, try and get the first 9 school displayed on the page. It should look similar to the page pictured above.
+As always, run `npm install` and then `npm start` to get your React app running locally. 
+
+## The Lab
+1. Add a `SchoolCard` component to inside the `row` element. Make sure that it renders. 
+```react
+<SchoolCard />
+```
+2. Pass a name as a string to that first school card. Modify the card to take props when it is initialized. Have the school name render out on the card using JSX. 
+```react
+<SchoolCard name="Your High School"/>
+```
+3. Change the card from taking in a hardcoded string, and have it take in first school's data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
+```react
+<SchoolCard school=data[0] />
+```
+4. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
+5. Expand your app by displaying data from the first six schools (instead of just one).
+6. Add additional demographic data.
 
 ### Stretch
 1. Using a loop, iterate through the school data so that EVERY school appears on the webpage.
 
-2. Have each SchoolCard display the percent of male students and percent of female students. Display this data anywhere on the card you choose.
-
-3. Some schools don't have any data available (these schools are usually too new to have any data collected yet). On the NYSED website, schools without any data are labeled with "No Data Available" instead of the usual card. Update the SchoolCard component so schools with no data appear with the appropriate label.
+2. Some schools don't have any data available (these schools are usually too new to have any data collected yet). On the NYSED website, schools without any data are labeled with "No Data Available" instead of the usual card. Update the SchoolCard component so schools with no data appear with the appropriate label.
 
 Reference: https://reactjs.org/docs/conditional-rendering.html
