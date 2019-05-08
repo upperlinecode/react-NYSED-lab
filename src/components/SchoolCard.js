@@ -1,8 +1,8 @@
 import React from 'react'
 import './css/SchoolCard.css'
 
-const SchoolCard = (props) => {
-  const component = new React.Component(props)
+const SchoolCard = () => {
+  const component = new React.Component()
   
   component.render = () => {
     return(
