@@ -2,10 +2,7 @@ import React from 'react'
 import './css/SchoolCard.css'
 
 const SchoolCard = () => {
-  const component = new React.Component()
-  
-  component.render = () => {
-    return(
+  return(
     <div className="col-4">
       <div className="card">
         <h5 className="card-header">PASS SCHOOL NAME HERE</h5>
@@ -15,23 +12,21 @@ const SchoolCard = () => {
             <span className="badge">2016-17</span>
             <span className="badge">Archive</span>
           </h5>
-            <span className="badge badge-header">Student Data</span>
-            <ul className="list-group">
-              <li className="list-group-item">Enrollment Data</li>
-              <li className="list-group-item">3-8 ELA Assessment Data</li>
-              <li className="list-group-item">3-8 Math Assessment Data</li>
-            </ul>
-            <span className="badge badge-header">School Data</span>
-            <ul className="list-group">
-              <li className="list-group-item">School Report Card</li>
-              <li className="list-group-item">Student and Educator Report</li>
-            </ul>
+          <span className="badge badge-header">Student Data</span>
+          <ul className="list-group">
+            <li className="list-group-item">Enrollment Data</li>
+            <li className="list-group-item">3-8 ELA Assessment Data</li>
+            <li className="list-group-item">3-8 Math Assessment Data</li>
+          </ul>
+          <span className="badge badge-header">School Data</span>
+          <ul className="list-group">
+            <li className="list-group-item">School Report Card</li>
+            <li className="list-group-item">Student and Educator Report</li>
+          </ul>
         </div>
       </div>
     </div>
-  )}
-  
-  return component
+  )
 }
 
 export default SchoolCard
