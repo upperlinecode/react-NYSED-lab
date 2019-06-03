@@ -18,11 +18,17 @@ New York collects vast amounts of data about every school in the state. They col
 For this lab, we are going to replicate a page of the NYSED website. Users are able to look up school by letter. We are going to try and reproduce the webpage for all the schools in New York State that start with the letter "C."
 
 ### Getting Started
-Open the file "nycSchoolEnrollmentData.js" in the "src" directory. This contains demographic data for every school in New York state that begins with the letter "C." Take a look a see how this data is structured.
 
-Now, open "App.js" and notice how the school data has been imported as "data" already. You're ready to get started.
-
-As always, run `npm install` and then `npm start` to get your React app running locally. 
+1. Clone this repository using `git clone`
+2. `cd` into the `html-to-react-refactor` folder
+3. Open the file `nycSchoolEnrollmentData.js` in the `src` directory. This contains demographic data for every school in New York state that begins with the letter "C." Take a look a see how this data is structured.
+4. Now, open `App.js` and notice how the school data has been imported as "data" already. You're ready to get started.
+5. `npm install`
+6. `npm start`
+7. If the app compiles with errors, to view the live app:
+    1. tap the `CS50 IDE` link in the header
+    2. Choose `Web Server`
+8. If the app fails to compile, re-clone the repository
 
 ## The Lab
 1. Add a `SchoolCard` component to inside the `row` element. Make sure that it renders. 
