@@ -20,7 +20,7 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 ### Getting Started
 
 1. Clone this repository using `git clone`
-2. `cd` into the `html-to-react-refactor` folder
+2. `cd` into the `react-NYSED-lab` folder
 3. Open the file `nycSchoolEnrollmentData.js` in the `src` directory. This contains demographic data for every school in New York state that begins with the letter "C." Take a look a see how this data is structured.
 4. Now, open `App.js` and notice how the school data has been imported as "data" already. You're ready to get started.
 5. `npm install`
