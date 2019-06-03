@@ -25,10 +25,13 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 4. Now, open `App.js` and notice how the school data has been imported as "data" already. You're ready to get started.
 5. `npm install`
 6. `npm start`
-7. If the app compiles with errors, to view the live app:
+7. If the app compiles with no errors:
+    1. click on the `localhost` link, or
+    2. tap the `CS50 IDE` link in the header and choose `Web Server`
+8. If the app compiles with errors, to view the live app:
     1. tap the `CS50 IDE` link in the header
-    2. Choose `Web Server`
-8. If the app fails to compile, re-clone the repository
+    2. choose `Web Server`
+9. If the app fails to compile, re-clone the repository
 
 ## The Lab
 1. Add a `SchoolCard` component to inside the `row` element. Make sure that it renders. 
