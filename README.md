@@ -51,7 +51,7 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 6. Add additional demographic data.
 
 ### Stretch
-1. Using a loop, iterate through the school data so that EVERY school appears on the webpage.
+1. Using a JavaScript `.map()` method, iterate through the school data so that EVERY school appears on the webpage.
 
 2. Some schools don't have any data available (these schools are usually too new to have any data collected yet). On the NYSED website, schools without any data are labeled with "No Data Available" instead of the usual card. Update the SchoolCard component so schools with no data appear with the appropriate label.
 
