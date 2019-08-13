@@ -49,13 +49,16 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 ```
 5. Change the card from taking in a hardcoded string, and have it take in first school's data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
 ```react
-<SchoolCard school=data[0] />
-<SchoolCard school=data[1] />
-<SchoolCard school=data[1] />
+<SchoolCard school={data[0]} />
+<SchoolCard school={data[1]} />
+<SchoolCard school={data[1]} />
 ```
 Be sure to change the component to display the `ENTITY_NAME` property of the object.
+
 6. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
+
 7. Expand your app by displaying data from the first six schools (instead of just one).
+
 8. Add additional demographic data.
 
 ### Stretch
