@@ -31,17 +31,32 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 ```react
 <SchoolCard />
 ```
-2. Pass a name as a string to that first school card. Modify the card to take props when it is initialized. Have the school name render out on the card using JSX. 
+2. Create additional instances of the `SchoolCard` component inside the `row` element. Make sure that they all render.
+```react
+<SchoolCard />
+<SchoolCard />
+<SchoolCard />
+```
+3. Pass a name as a string to that first school card. Modify the card to take props when it is initialized. Have the school name render out on the card using JSX. 
 ```react
 <SchoolCard name="Your High School"/>
 ```
-3. Change the card from taking in a hardcoded string, and have it take in first school's data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
+4. Pass names to all three `SchoolCard` components we've created so far.
+```react
+<SchoolCard name="Your High School"/>
+<SchoolCard name="Neptune High School"/>
+<SchoolCard name="East High School"/>
+```
+5. Change the card from taking in a hardcoded string, and have it take in first school's data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
 ```react
 <SchoolCard school=data[0] />
+<SchoolCard school=data[1] />
+<SchoolCard school=data[1] />
 ```
-4. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
-5. Expand your app by displaying data from the first six schools (instead of just one).
-6. Add additional demographic data.
+Be sure to change the component to display the `ENTITY_NAME` property of the object.
+6. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
+7. Expand your app by displaying data from the first six schools (instead of just one).
+8. Add additional demographic data.
 
 ### Stretch
 1. Using a JavaScript `.map()` method, iterate through the school data so that EVERY school appears on the webpage.
