@@ -12,12 +12,12 @@ Take a look at the page you'll be designing:
 The full NYSED data site can be found below:
 [NYSED Data Site](https://data.nysed.gov/)
 
-## The Context
+#### Some Context
 New York collects vast amounts of data about every school in the state. They collect enrollment data about student demographics, graduation rates, state test results, and school survey data. All of this data is aggregated and presented in a user friendly way at the NYSED website.
 
 For this lab, we are going to replicate a page of the NYSED website. Users are able to look up school by letter. We are going to try and reproduce the webpage for all the schools in New York State that start with the letter "C."
 
-### Getting Started
+## Getting Started
 
 1. Clone this repository using `git clone`
 2. `cd` into the `react-NYSED-lab` folder
@@ -61,7 +61,7 @@ Be sure to change the component to display the `ENTITY_NAME` property of the obj
 
 8. Add additional demographic data.
 
-### Stretch
+## Extensions
 1. Using a JavaScript `.map()` method, iterate through the school data so that EVERY school appears on the webpage.
 
 2. Some schools don't have any data available (these schools are usually too new to have any data collected yet). On the NYSED website, schools without any data are labeled with "No Data Available" instead of the usual card. Update the SchoolCard component so schools with no data appear with the appropriate label.
