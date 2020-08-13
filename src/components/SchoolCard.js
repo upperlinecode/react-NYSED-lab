@@ -1,7 +1,7 @@
-import React from 'react'
-import './css/SchoolCard.css'
+import React from 'react';
+import './css/SchoolCard.css';
 
-const SchoolCard = () => {
+function SchoolCard() {
   return(
     <div className="col-4">
       <div className="card">
@@ -26,7 +26,7 @@ const SchoolCard = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default SchoolCard
+export default SchoolCard;

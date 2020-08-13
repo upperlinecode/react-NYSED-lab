@@ -1,13 +1,13 @@
-import React from 'react'
-import navImage from './images/Navbar.png'
-import './css/Navbar.css'
+import React from 'react';
+import navImage from './images/Navbar.png';
+import './css/Navbar.css';
 
-const Navbar = () => {
+function Navbar() {
   return(
     <div>
       <img className="navbar" alt="navbar" src={ navImage }/>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
