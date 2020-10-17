@@ -47,19 +47,25 @@ For this lab, we are going to replicate a page of the NYSED website. Users are a
 <SchoolCard name="Neptune High School"/>
 <SchoolCard name="East High School"/>
 ```
-5. Change the card from taking in a hardcoded string, and have it take in first school's data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
+5. Pass names to all three `SchoolCard` from the `data` instead of hardcoding those pieces of information.
+```react
+<SchoolCard name={data[0].ENTITY_NAME}/>
+<SchoolCard name={data[1].ENTITY_NAME}/>
+<SchoolCard name={data[2].ENTITY_NAME}/>
+```
+6. Change the card from taking in a hardcoded string, and have it take in the school's entire data object instead. The SchoolCard component will need to be refactored based on this information, as we're now passing a school object instead of a name string. 
 ```react
 <SchoolCard school={data[0]} />
 <SchoolCard school={data[1]} />
-<SchoolCard school={data[1]} />
+<SchoolCard school={data[2]} />
 ```
 Be sure to change the component to display the `ENTITY_NAME` property of the object.
 
-6. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
+7. Change the SchoolCard to display at least three interesting pieces of demographic data about the school. 
 
-7. Expand your app by displaying data from the first six schools (instead of just one).
+8. Expand your app by displaying data from the first six schools (instead of just one).
 
-8. Add additional demographic data.
+9. Add additional demographic data.
 
 ## Extensions
 1. Using a JavaScript `.map()` method, iterate through the school data so that EVERY school appears on the webpage.
